@@ -1,0 +1,44 @@
+CREATE TABLE Student_04(
+Dept_ID number,
+Roll_no number PRIMARY KEY,
+Email varchar2(50),
+Mob_no number,
+Addr1 varchar2(100),
+Addr2 varchar2(100),
+State varchar2(50),
+Pin number,
+City varchar2(100),
+F_name varchar2(100) NOT NULL,
+L_name varchar2(100),
+DOB date);
+desc Student_04;
+
+
+CREATE TABLE Dept_04(
+Dept_ID number PRIMARY KEY,
+Dept_name varchar2(100),
+Dept_location varchar2(50),
+Hod_ID number);
+desc Dept_04;
+
+
+CREATE TABLE Faculty_04(
+Dept_ID number,
+Fac_ID number PRIMARY KEY,
+Email varchar2(50),
+Mob_no number UNIQUE,
+Addr1 varchar2(100),
+Addr2 varchar2(100),
+City varchar2(50),
+State varchar2(50),
+Pin number,
+F_name varchar2(100) NOT NULL,
+L_name varchar2(100),
+DOB date);
+DESC Faculty_04;
+
+
+CREATE TABLE Subject_04(
+Sub_code varchar2(50) PRIMARY KEY,
+Sub_name varchar2(100));
+DESC Subject_04;
