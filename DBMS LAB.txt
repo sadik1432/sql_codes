@@ -42,3 +42,10 @@ CREATE TABLE Subject_04(
 Sub_code varchar2(50) PRIMARY KEY,
 Sub_name varchar2(100));
 DESC Subject_04;
+
+CREATE TABLE Marks_04(
+Exam_code varchar(20),
+Roll_no number,
+sub_code varchar(50),
+marks number not null check(marks between 0 and 25));
+DESC Marks_04;
