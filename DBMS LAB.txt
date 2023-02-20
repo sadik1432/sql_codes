@@ -1,3 +1,5 @@
+//Create Student table
+
 CREATE TABLE Student_04(
 Dept_ID number,
 Roll_no number PRIMARY KEY,
@@ -12,7 +14,9 @@ F_name varchar2(100) NOT NULL,
 L_name varchar2(100),
 DOB date);
 desc Student_04;
+------------------------------------------------------------
 
+//Create Dept table
 
 CREATE TABLE Dept_04(
 Dept_ID number PRIMARY KEY,
@@ -20,7 +24,9 @@ Dept_name varchar2(100),
 Dept_location varchar2(50),
 Hod_ID number);
 desc Dept_04;
+----------------------------------------------------------------
 
+//Create Faculty Table
 
 CREATE TABLE Faculty_04(
 Dept_ID number,
@@ -36,16 +42,30 @@ F_name varchar2(100) NOT NULL,
 L_name varchar2(100),
 DOB date);
 DESC Faculty_04;
+--------------------------------------------------
 
+//Create Subject table
 
 CREATE TABLE Subject_04(
 Sub_code varchar2(50) PRIMARY KEY,
 Sub_name varchar2(100));
 DESC Subject_04;
+-------------------------------------------------
 
+//Create Marks table
 CREATE TABLE Marks_04(
 Exam_code varchar(20),
 Roll_no number,
 sub_code varchar(50),
 marks number not null check(marks between 0 and 25));
 DESC Marks_04;
+-----------------------------------------------------
+
+//Add primary key to Marks table
+
+ALTER TABLE Marks_04
+ADD CONSTRAINT PK_Person PRIMARY KEY(Exam_code,Roll_no,Marks);
+DESC Marks_04;
+---------------------------------------------------------------
+
+
