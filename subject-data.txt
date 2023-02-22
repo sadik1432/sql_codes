@@ -1,0 +1,40 @@
+INSERT INTO Subject_04(Sub_code,Sub_name)
+VALUES ('BS-PH101','Physics-I');
+INSERT INTO Subject_04(Sub_code,Sub_name)
+VALUES ('BS-CH101','Chemistry-I');
+INSERT INTO Subject_04(Sub_code,Sub_name)
+VALUES ('BS-M101','Mathematics-IA');
+INSERT INTO Subject_04(Sub_code,Sub_name)
+VALUES ('BS-M102','Mathematics-IB');
+INSERT INTO Subject_04 VALUES ('BS-PH201','Physics-I');
+INSERT INTO Subject_04 VALUES ('BS-CH201','Chemilstry-i');
+INSERT INTO Subject_04 VALUES ('BS-M201','Mathematics-IIA');
+INSERT INTO Subject_04 VALUES ('BS-M202','Mathematics-IIB');
+INSERT INTO Subject_04 VALUES ('ES-CS201','Programming for Problem Solving');
+INSERT INTO Subject_04 VALUES ('HM-HU201','English');
+INSERT ALL
+INTO Subject_04 VALUES ('ESC301','Analog and Digital Electronics')
+INTO Subject_04 VALUES ('PCC-CS301','Data Structure & Algorithms')
+INTO Subject_04 VALUES ('PCC-CS302','Computer Organisation')
+INTO Subject_04 VALUES ('BSC301','Mathematics-III')
+INTO Subject_04 VALUES ('HSMC301','Economics for Engineers')
+INTO Subject_04 VALUES ('PCC-CS401','Discrete Mathematics')
+INTO Subject_04 VALUES ('PCC-CS402','Computer Architecture')
+INTO Subject_04 VALUES ('PCC-CS403','Formal Language & Automata Theory')
+INTO Subject_04 VALUES ('PCC-CS404','Design & Analysis of Algorithms')
+INTO Subject_04 VALUES ('BSC401','Biology')
+INTO Subject_04 VALUES ('MC401','Environmental Sciences')
+INTO Subject_04 VALUES ('ESC501','Software Engineering')
+INTO Subject_04 VALUES ('PCC-CS501','Compiler Design')
+INTO Subject_04 VALUES ('PCC-CS502','Operating Systems')
+INTO Subject_04 VALUES ('PCC-CS503','Object Oriented Programming')
+INTO Subject_04 VALUES ('HSMC-501','Introduction to Industrial Management')
+INTO Subject_04 VALUES ('PEC-IT501B','Artificial Intelligence')
+INTO Subject_04 VALUES ('MC-CS501A','Constitution of India')
+INTO Subject_04 VALUES ('PCC-CS601','Database Management Systems')
+INTO Subject_04 VALUES ('PCC-CS602','Computer Networks')
+INTO Subject_04 VALUES ('PEC-IT601D','Image Processing')
+INTO Subject_04 VALUES ('PEC-IT602C','Human Computer Interaction')
+INTO Subject_04 VALUES ('OEC-IT601A','Numerical Methods')
+INTO Subject_04 VALUES ('PROJ-CS601','Research Methodology')
+SELECT 1 FROM dual;
