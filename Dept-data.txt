@@ -1,0 +1,4 @@
+INSERT ALL
+INTO Dept_04 (Dept_ID,Dept_name,Dept_location) VALUES( 01,'Computer Science & Engineering','SB1')
+INTO Dept_04 (Dept_ID,Dept_name,Dept_location) VALUES( 02,'Electronics & Communication Engineering','SB1')
+SELECT 1 FROM dual;
