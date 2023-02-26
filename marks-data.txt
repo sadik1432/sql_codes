@@ -1,0 +1,132 @@
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120001,'PCC-CS501',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120002,'PCC-CS502',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120003,'PCC-CS601',19);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120004,'PCC-CS502',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120005,'PCC-CS503',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA2',14400120006,'ESC501',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120007,'PCC-CS601',18);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA2',14400120008,'PEC-IT501B',10);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120010,'PCC-CS601',11);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA3',14400120011,'PCC-CS602',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120012,'PEC-IT601D',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120013,'PEC-IT602C',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA2',14400120014,'OEC-IT601A',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120015,'PCC-CS502',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA3',14400120016,'PCC-CS503',12);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120017,'ESC501',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120018,'PCC-CS501',20);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA3',14400120019,'PCC-CS501B',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA2',14400120020,'PCC-CS601',20);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA3',14400120021,'PCC-CS602',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120022,'PCC-CS601D',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120023,'PCC-CS602C',23);
+
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120024,'PCC-CS601A',21);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120025,'PCC-CS502',25);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA2',14400120026,'PCC-CS503',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120027,'ESC501',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120028,'PCC-CS501',24);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120029,'HSMC-501',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA2',14400120030,'PEC-IT601D',23);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120031,'PCC-CS602',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA1',14400120032,'PEC-IT601D',23);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120033,'PEC-IT602C',22);
+
+insert into Marks_04
+(exam_code,roll_no,sub_code,marks)
+values('CA4',14400120034,'OEC-IT601A',25);
