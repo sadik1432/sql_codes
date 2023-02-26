@@ -1,0 +1,36 @@
+insert into FACULTY_04
+values(01,101,'sunandasinha@gmail.com',948274723,'Kolkata','','Kolkata','west Bengal',700001,'Sunanda','Sinha','21-Jan-1978');
+
+insert into FACULTY_04
+values(01,102,'souvikbiswas@gmail.com',948274723,'Kolkata','','Kolkata','west Bengal',700001,'Souvik','Biswas','21-Mar-1970');
+
+insert into FACULTY_04
+values(01,103,'deepsumondev@gmail.com',9482234234,'Kolkata','','Kolkata','west Bengal',700001,'DeepSumon','Dev','20-Apr-1985');
+
+insert into FACULTY_04
+values(01,104,'debobratanath@gmail.com',9482375134,'Kolkata','','Kolkata','west Bengal',700001,'Debobrata','Nath','20-Oct-1970');
+
+insert into FACULTY_04
+values(01,105,'kallol.bera@nitmas.edu.in',9482375334,'Kolkata','','Kolkata','west Bengal',700001,'Kallol','Bera','20-Oct-1970');
+
+insert into FACULTY_04
+VALUES(2,201,'hodece@nitmas.edu.in',9846572734,'Kolkata','','Kolkata','west Bengal',700001,'Sujoy','Biswas','23-Sep-1970');
+
+insert into FACULTY_04
+VALUES(2,202,'biplab.roy@nitmas.edu.in',984654564,'Kolkata','','Kolkata','west Bengal',700001,'Biplop','Roy','23-Sep-1980');
+
+insert into FACULTY_04
+VALUES(2,203,'suman.haldar@nitmas.edu.in',984652364,'Kolkata','','Kolkata','west Bengal',700001,'Suman','Halder','23-Sep-1985');
+
+insert into FACULTY_04
+VALUES(2,204,'biswarup.mukherjee@nitmas.edu.in',984652364,'Kolkata','','Kolkata','west Bengal',700001,'Biswarup','Mukherjee','23-Mar-1980');
+
+insert into FACULTY_04
+VALUES(2,205,'soumita.halderchakraborty@nitmas.edu.in',983452364,'Kolkata','','Kolkata','west Bengal',700001,'Soumita','Halder(Chakraborty)','23-Mar-1985');
+
+
+insert into FACULTY_04
+VALUES(2,206,' paramita.das@nitmas.edu.in',983452364,'Kolkata','','Kolkata','west Bengal',700001,'Paramita','Das','23-Mar-1980');
+
+insert into FACULTY_04
+VALUES(2,207,'Bobbiswas@gmail.com',948483424,'Kolkata','','Kolkata','West Bengal',700001,'Bob','Biswas','24-Jan-1970');
