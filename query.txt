@@ -1,0 +1,128 @@
+Q. Select all faculties from Durgapur.
+
+SELECT F_name,L_name 
+FROM Faculty_04
+WHERE City='Durgapur';
+---------------------------------------
+Q. Select all student from CSE dept.
+SELECT Student_04.F_name, Student_04.L_name ,dept_04.dept_name
+FROM Student_04,Dept_04
+WHERE Student_04.dept_id=Dept_04.dept_id AND
+Dept_04.dept_name='CSE';
+--------------------------------------------------------------------
+
+Q. Find the name of HOD of CSE
+SELECT Faculty_04.F_name, Faculty_04.L_name
+FROM Faculty_04,Dept_04
+WHERE Faculty_04.fac_id=Dept_04.hod_id AND Dept_04.dept_name='CSE';
+-------------------------------------------------------------------------------------------------
+
+Q. Find all Subject taught by Sunanda Sinha teaching more than 1 subject.
+SELECT subject_04.Sub_name
+FROM Fac_sub_04,Subject_04,faculty_04
+WHERE Fac_sub_04.sub_code=subject_04.sub_code AND 
+ fac_sub_04.fac_id=faculty_04.fac_id AND Faculty_04.f_name='Sunanda' AND Faculty_04.l_name='Sinha';
+--------------------------------------------------------------------------------------------------------
+
+Q. Find all faculties who teach 'Project Management & Enterprenurship'
+SELECT Faculty_04.f_name, Faculty_04.l_name, subject_04.sub_name
+FROM Faculty_04,Subject_04,fac_sub_04
+WHERE Faculty_04.fac_id=fac_sub_04.fac_id AND fac_sub_04.sub_code=subject_04.sub_code AND subject_04.sub_name='Project Management & Enterprenurship';
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. Find all faculties whose mob_no begins with 9
+SELECT F_name, L_name, Mob_no
+FROM Faculty_04
+WHERE Mob_no LIKE '9%';
+------------------------------------------------------
+
+Q. Find all Student whose mob_no are Like 8_5*
+SELECT F_name, L_name, Mob_no
+FROM Student_04
+WHERE Mob_no LIKE '8_5%';
+----------------------------------------------------
+Q. Find all Student whose Last name are 'Ghosh','Das','Pal','Halder'
+SELECT F_name, L_name
+FROM Student_04
+WHERE l_name='Ghosh' OR l_name='Das' OR l_name='Pal' OR l_name='Halder';
+---------------------------------------------------------------------------
+Q. Select all Dept Situated in SB1
+SELECT *
+FROM Dept_04
+WHERE Dept_location='SB1';
+---------------------------------------------------------------------
+Q. Display all Student in ascending order of their First name
+SELECT f_name,l_name
+FROM Student_04
+ORDER BY F_name;
+-------------------------------------------------------------------
+Q. Display all faculties in descending order by l_name.
+SELECT f_name,l_name
+FROM Faculty_04
+ORDER BY l_name desc;
+-----------------------------------------------------------------
+Q. Alter TAble faculty to add a colomn DOJ
+ALTER TABLE Faculty_04
+ADD DOJ Date;
+To insert:
+UPDATE Faculty_04
+SET DOJ='2-FEB-12'
+WHERE Fac_id='101';
+-----------------------------------------------
+
+Q. Select the count of Student in CSE
+SELECT Count(Roll_no)
+FROM Student_04;
+-----------------------------------------------
+Q. select the count of faculties in ECE
+SELECT Count(fac_id)
+FROM Faculty_04,Dept_04
+WHERE Faculty_04.dept_id=Dept_04.dept_id AND Dept_04.dept_name='ECE';
+-----------------------------------------------------------------------------------
+Q. select all distinct city from studnet
+SELECT DISTINCT City
+FROM Student_04;
+-------------------------------------------------------------
+Q. select all distinct state from faculty
+SELECT DISTINCT State
+From Faculty_04;
+--------------------------------------------------------------
+Q.Find all Student who got 24 in DBMS in CA1
+SELECT Student_04.f_name, Student_04.l_name
+FROM Student_04,marks_04,subject_04
+WHERE Student_04.roll_no=Marks_04.roll_no AND Marks_04.sub_code=subject_04.sub_code AND 
+Subject_04.sub_name='Database Management Systems' AND 
+Marks_04.exam_code='CA1' AND Marks_04.marks='24';
+--------------------------------------------------------------------
+Q. Find all Student who got <15 in DBMS in CA2
+SELECT Student_04.f_name, Student_04.l_name, Marks_04.marks
+FROM Student_04,Marks_04,Subject_04
+WHERE Student_04.roll_no=Marks_04.roll_no AND
+Marks_04.sub_code=subject_04.sub_code AND
+Marks_04.exam_code='CA2' AND
+Marks_04.marks<15 AND
+subject_04.sub_name='Database Management Systems';
+-------------------------------------------------------------------------
+Q.Find all Students who obtained 15-20 in DBMS in CA2
+SELECT Student_04.f_name, Student_04.l_name, Marks_04.marks
+FROM Student_04,Marks_04,Subject_04
+WHERE Student_04.roll_no=Marks_04.roll_no AND
+Marks_04.sub_code=subject_04.sub_code AND
+Marks_04.exam_code='CA1' AND
+Marks_04.marks BETWEEN 15 AND 20 AND
+subject_04.sub_name='Database Management Systems';
+-------------------------------------------------------------
+Q.Select all faculties who do not stay at kolkata
+SELECT F_name, L_name
+FROM Faculty_04
+WHERE NOT City='Kolkata';
+-------------------------------------------------------------------------------
+Q. Select all Student who do not stay either at Durgapur or Patna
+SELECT F_name, L_name
+FROM Student_04
+WHERE NOT (City='Durgapur' OR city='Patna');
+------------------------------------------------------------------------------
+Q.select all student whose last name are not mentioned
+SELECT F_name, L_name
+FROM Student_04
+WHERE l_name='';
