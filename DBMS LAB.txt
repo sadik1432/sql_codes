@@ -51,21 +51,52 @@ Sub_code varchar2(50) PRIMARY KEY,
 Sub_name varchar2(100));
 DESC Subject_04;
 -------------------------------------------------
+//FAC-SUB TABLE
 
+CREATE TABLE  "FAC_SUB_04" 
+   (	"FAC_ID" NUMBER, 
+	"SUB_CODE" VARCHAR2(50));
+
+---------------------------------------
 //Create Marks table
+
 CREATE TABLE Marks_04(
 Exam_code varchar(20),
 Roll_no number,
 sub_code varchar(50),
 marks number not null check(marks between 0 and 25));
 DESC Marks_04;
+
 -----------------------------------------------------
+//ADD FOREIGN KEY TO STUDENT TABLE
+
+ALTER TABLE STUDENT_04
+ADD  CONSTRAINT fk_dept_id FOREIGN KEY (Dept_ID) REFERENCES Dept_04(Dept_id);
+
+-------------------------------------------------------------------------------------
+/ADD FOREIGN KEY TO FACULTY TABLE
+
+ALTER TABLE FACULTY_04
+ADD CONSTRAINT fk_deptid FOREIGN KEY (Dept_ID) REFERENCES Dept_04(Dept_id)
+
+--------------------------------------------------------------------------------------
+//ADD PRIMARY KEY to Fac_sub TABLE
+
+ALTER TABLE Fac_sub_04
+ADD CONSTRAINT pk_comp PRIMARY(Fac_id,Sub_code);
+-----------------------------------------------------------------------------
 
 //Add primary key to Marks table
 
 ALTER TABLE Marks_04
-ADD CONSTRAINT PK_Person PRIMARY KEY(Exam_code,Roll_no,Marks);
+ADD CONSTRAINT PK_com PRIMARY KEY(Exam_code,Roll_no,Marks);
 DESC Marks_04;
 ---------------------------------------------------------------
 
+/ADD FOREIGN KEY TO Marks TABLE
 
+ALTER TABLE Marks_04
+ADD CONSTRAINT fk_sub FOREIGN KEY (Sub_code) REFERENCES Subject_04(sub_code);
+
+ALTER TABLE Marks_04
+ADD CONSTRAINT fk_roll FOREIGN KEY (Roll_No) REFERENCES Student_04(Roll_No);
